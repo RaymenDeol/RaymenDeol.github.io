@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="form1.css">
+		<title>Form1</title>
+	</head>
+	
+	<body>
+		<!-- Post method to CGI -->
+		<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+			<h1>Personal Information Form</h1>
+			<label for="name_input">Name:</label>
+			<input type="text" name="name" placeholder="enter name.." id="name_input">
+			<br>
+			<label for="email_input">Email:</label>
+			<input type="text" name="email" placeholder="enter email.." id="email_input">
+			<br>
+			<!-- Full functionality for date type is not avabilable for firefox -->
+			<label for="radio">Date of Birth:</label>
+			<input type="date" name="date" placeholder="mm/dd/yyyy" id="date_input">
+			<br>
+			<input type="submit" name="button" id="submit_button" value="Submit">
+		</form>
+		
+		<form class="form_2" method="post" action="http://webdevbasics.net/scripts/demo.php">
+			<h1>Join Our Club: </h1>
+			<label for="name_input">Years Programming:</label>
+			<input type="number" min="1" max="50" name="exp" id="exp_input">
+			<br>
+			<label for="email_input">Coding Language:</label>
+			<select name="lang" id="lang_input" size="6">
+					<option value="Python">Python</option>
+					<option value="Java">Java</option>
+					<option value="C++">C++</option>
+					<option value="Javascript">Javascript</option>
+					<option value="PHP">PHP</option>
+					<option value="Other">Other</option>
+			</select>
+			<br>
+			<label for="pass_input">New Password: </label>
+			<input type="password" name="pass" id="pass_input" maxlength="12">
+			<br>
+			<input type="submit" name="button" id="submit_button" value="Submit">
+		</form>
+		
+	</body>
+</html>
+<!--
+Create a web page with a form that accepts a website visitor’s name, e-mail, and
+birthdate. Use the HTML5 type="date" attribute to configure a calendar control on
+browsers that support the attribute value. Place your name and e-mail address at
+the bottom of the page. 
+-->
